@@ -1,0 +1,60 @@
+<html>
+
+    <head>
+        <title>Pick Lipsticks</title>
+        <script type="text/javascript" src="{{ url_for('static', filename='index.js') }}"  ></script>
+        <link rel="stylesheet" href="../static/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <style>
+            .input-form{
+                width: 400px;
+            }
+            .main-container{
+                margin-top: 100px;
+            }
+            .analysis-btn{
+
+                width: 100px;
+                padding: 10px;
+                font-size: 15px;
+                font-weight: bold;
+            }
+            .img-container {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+
+
+           <div class="main-container">
+              <center><h2 class="mb-3"> Lips Color Changer </h2></center>
+              
+
+              <br> <br>
+           </div>
+
+           <div class="img-container"> <!-- Block parent element -->
+           
+                
+            <img id="bg" src="{{ url_for('video_feed') }}">
+          </div>
+
+
+          <form class="input-form" action = "http://localhost:5000/" method = "post">
+                    
+            <!-- Chatbot Q&A -->
+              <p><b>Place Here Your Favourite Lipsticks Color Hex Code</b></p>
+              <input class="form-control" placeholder="Write Hexcode | ex: #ff414d" type="text" name="color_input" value="">
+
+              <p><input class="btn btn-success mt-3" type = "submit" value = "Select" /></p>
+            
+        </form>
+
+
+
+
+
+    </body>
+
+</html>

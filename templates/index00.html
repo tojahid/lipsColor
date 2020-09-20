@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Video Streaming Demonstration</title>
+  </head>
+  <body>
+    <h1>Video Streaming Demonstration</h1>
+    <img id="bg" src="{{ url_for('video_feed') }}">
+
+    <form class="input-form" action = "http://localhost:5000/" method = "post">
+                    
+      <!-- Chatbot Q&A -->
+        <p><b>Put Here Your Favourite Lipsticks Color in  Hex Code</b></p>
+        <input class="form-control" placeholder="Write Hexcode | ex: #ff414d" type="text" name="color_input" value="">
+
+        <p><input class="btn btn-success mt-3" type = "submit" value = "Select" /></p>
+      
+  </form>
+  
+  </body>
+</html>

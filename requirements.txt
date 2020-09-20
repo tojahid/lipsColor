@@ -1,0 +1,5 @@
+opencv-python==4.2.0.32
+numpy==1.18.2
+dlib==19.19.0
+Pillow==7.2.0
+Flask==0.12.2
